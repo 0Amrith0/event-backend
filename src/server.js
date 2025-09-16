@@ -57,4 +57,4 @@ app.use((req, res, next) => {
 //     console.log(`Server running on PORT: ${PORT}`)
 // })
 
-module.exports = app;
+export default app;
