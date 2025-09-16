@@ -19,7 +19,9 @@ const PORT = process.env.PORT || 5050;
 
 const __dirname = path.resolve();
 
-app.use(cors({ origin: "http://localhost:6050", credentials: true }));
+app.use(cors({ origin: ["http://localhost:6050", 
+  'https://event-frontend-livid.vercel.app'],
+  credentials: true }));
 app.use(cookieParser());
 app.use(express.json());
  
